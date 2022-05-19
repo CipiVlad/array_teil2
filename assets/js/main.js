@@ -244,12 +244,94 @@ let checkNumber = [
     78
 ];
 
-
+let newArray = [];
 checkNumber.forEach(e => {
 
     if (e % 3 === 0) {
-        return console.log(e + 100);
+        e += 100;
     }
+    newArray.push(e)
 
 })
-console.log(checkNumber);
+// console.log(newArray);
+
+
+// ----------------------------------------------------------------
+
+let inputSatz = document.getElementById("inputSatz");
+let inputSlice = document.getElementById('inputSlice');
+let hintererTeil = document.getElementById("hintererTeil");
+let vordererTeil = document.getElementById('vodererTeil');
+
+let davorTrennen = document.getElementById('davorTrennen');
+let danachTrennen = document.getElementById('danachTrennen');
+
+
+const absenden = () => {
+
+    if (davorTrennen.checked && inputSatz.value) {
+        document.getElementById('hintererTeil').innerHTML = inputSatz.value;
+
+
+        if (davorTrennen.checked && inputSatz.value && inputSlice.value) {
+
+            let output = inputSlice.value;
+            output = output.split(' ');
+            let array = output.filter(word => word.length = inputSlice);
+            array = array.join(" ");
+            console.log(array);
+            document.getElementById('hintererTeil').innerHTML = array;
+            // document.getElementById('hintererTeil').innerHTML = output;
+            // document.getElementById('hintererTeil').innerHTML = array.pop();
+        }
+
+    }
+
+
+
+
+}
+// davortrennen();
+
+
+// let array2 = array.map((element) => {
+//     return (element * 2)
+// });
+
+
+// let getraenke = [
+//     "Coca-Cola",
+//     "Apfelsaft",
+//     "Pepsi",
+//     "Traubensaft",
+//     "Sprite",
+//     "Orangensaft",
+//     "Red Bull Energy Drink",
+//     "Fanta"
+// ]
+
+
+
+// let upperDrinks = getraenke.map(element => {
+//     return element.toUpperCase();
+// })
+
+
+
+
+// 
+
+// const davortrennen = () => {
+
+//     if (inputSatz.value >= 0 && (!inputSlice.value)) {
+//         document.getElementById('hintererTeil').innerHTML = inputSatz.value;
+//         // console.log(inputSatz.value);
+//     }
+//     else if (inputSatz.value >= 0 && (inputSlice.value >= 0)) {
+//         console.log()
+//     }
+// }
+
+// danachtrennen = () => {
+//     console.log('hi')
+// }

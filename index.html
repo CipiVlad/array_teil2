@@ -20,6 +20,31 @@
     <!-- -------- m•a•i•n ----------------->
     <main>
 
+        <h1>Zeichenkettentrennungsmaschine</h1>
+        <br><br>
+
+        <form action="" onsubmit="return false">
+            <label for="">Zu trennende Zeichenkette</label>
+            <input type="text" name="" id="inputSatz"><br><br>
+
+            <label>Zeichenkette für die Trennungsposition</label>
+            <input type="text" name="" id="inputSlice">
+            <br>
+
+            <input type="radio" id="davorTrennen" name="1" checked>
+            <label for="">davor trennen</label>
+            <br>
+
+            <input type="radio" id="danachTrennen" name="1">
+            <label for="">danach trennen</label>
+            <button type="submit" onclick="absenden()">Daten absenden</button>
+        </form>
+        <br>
+        <h2>Ausgabe</h2>
+        <h3>voderer Teil</h3>
+        <p id="vodererTeil"></p>
+        <h3>hinterer Teil</h3>
+        <p id="hintererTeil"></p>
     </main>
 
     <!-- ---------- f•o•o•t•e•r ------------- -->
