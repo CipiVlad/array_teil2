@@ -127,7 +127,7 @@ let upperDrinks = getraenke.map(element => {
     return element.toUpperCase();
 })
 
-console.log(upperDrinks);
+// console.log(upperDrinks);
 
 
 // lev1_3: map()
@@ -170,12 +170,12 @@ let array = [
     15,
     78
 ];
-console.log(array);
+// console.log(array);
 
 let array2 = array.map((element) => {
     return (element * 2)
 });
-console.log(array2.sort());
+// console.log(array2.sort());
 // let array3 = array2.sort();
 // console.log(array3);
 
@@ -200,6 +200,56 @@ let toCelsius = fahrenheit.map((element) => {
     return element - ((32) * (5 / 9)).toFixed();
 })
 
-console.log(toCelsius);
+// console.log(toCelsius);
 
 
+// forEach()
+
+
+let checkNumber = [
+    18,
+    16,
+    80,
+    51,
+    47,
+    38,
+    95,
+    42,
+    68,
+    61,
+    34,
+    51,
+    20,
+    17,
+    56,
+    31,
+    100,
+    6,
+    5,
+    30,
+    74,
+    97,
+    28,
+    99,
+    91,
+    27,
+    73,
+    12,
+    92,
+    6,
+    27,
+    71,
+    26,
+    15,
+    78
+];
+
+
+checkNumber.forEach(e => {
+
+    if (e % 3 === 0) {
+        return console.log(e + 100);
+    }
+
+})
+console.log(checkNumber);
